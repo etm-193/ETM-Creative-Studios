@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://7gfjm5rs0qa6"]
+
+[ext_resource type="Script" uid="uid://dq0snt8cjjp6n" path="res://Scenes/Ocean.gd" id="1_au52k"]
+[ext_resource type="Texture2D" uid="uid://dfdjk32ai6v08" path="res://Assets/Water.png" id="1_jxjap"]
+[ext_resource type="Texture2D" uid="uid://biwbnqsa2nuw" path="res://Assets/Plane.png" id="2_au52k"]
+[ext_resource type="Texture2D" uid="uid://djmtulaoq5mij" path="res://Assets/Helicopter.png" id="3_s7ism"]
+[ext_resource type="AudioStream" uid="uid://bfs1jatnayjp0" path="res://Assets/eating.wav" id="5_s7ism"]
+
+[node name="Ocean" type="Node2D" unique_id=1192093299]
+script = ExtResource("1_au52k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1713513237]
+position = Vector2(6, 0)
+texture = ExtResource("1_jxjap")
+centered = false
+
+[node name="Plane" type="Sprite2D" parent="." unique_id=832993544]
+position = Vector2(159, 333)
+texture = ExtResource("2_au52k")
+
+[node name="Helicopter" type="Sprite2D" parent="." unique_id=1370432264]
+position = Vector2(332, 113)
+rotation = 0.4454403
+texture = ExtResource("3_s7ism")
+
+[node name="EatingSound" type="AudioStreamPlayer" parent="." unique_id=97148341]
+stream = ExtResource("5_s7ism")
