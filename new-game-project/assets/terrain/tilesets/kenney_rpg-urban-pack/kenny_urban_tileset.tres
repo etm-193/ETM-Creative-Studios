@@ -117,7 +117,6 @@ texture = ExtResource("1_phlxi")
 26:3/0 = 0
 27:3/0 = 0
 0:4/0 = 0
-1:4/0 = 0
 2:4/0 = 0
 3:4/0 = 0
 4:4/0 = 0
@@ -536,6 +535,7 @@ texture = ExtResource("1_phlxi")
 25:18/0 = 0
 26:18/0 = 0
 27:18/0 = 0
+1:4/0 = 0
 
 [resource]
 sources/0 = SubResource("TileSetAtlasSource_vtwfo")
