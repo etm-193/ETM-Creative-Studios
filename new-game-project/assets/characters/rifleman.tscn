@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bqidk1x70p7g7"]
+
+[ext_resource type="Script" uid="uid://duohw0a0hmuut" path="res://assets/characters/units/rifleman.gd" id="1_lcwpd"]
+[ext_resource type="Texture2D" uid="uid://cvq66n0vmxc8a" path="res://assets/characters/RifleManEdricWolfe.png" id="2_lcwpd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ogf2c"]
+size = Vector2(351.875, 322)
+
+[node name="Rifleman" type="Node2D" unique_id=1266865911]
+script = ExtResource("1_lcwpd")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=586359865]
+position = Vector2(2, 5)
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("2_lcwpd")
+
+[node name="ClickArea" type="Area2D" parent="." unique_id=1355236728]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=1006766745]
+visible = false
+shape = SubResource("RectangleShape2D_ogf2c")
